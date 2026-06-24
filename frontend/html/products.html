@@ -8,29 +8,27 @@
     content="Explore our luxury scented candle collections. Hand-selected fragrance profiles categorized by Maharani Collection, Shubharambh Collection, and Festive Gift Sets.">
   <title>Curated Candle Collections | Product Gallery</title>
 
-  <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Stylesheet Link -->
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-  <!-- GLOBAL STICKY LUXURY NAVBAR -->
   <nav class="luxury-navbar" id="navbar">
     <div class="nav-container">
-      <a href="index.html" class="navbar-logo" id="nav-logo">
+      <a href="../index.html" class="navbar-logo" id="nav-logo">
         Anindé &amp; Co.
       </a>
+
       <div class="navbar-menu" id="navbar-menu">
-        <a href="index.html" class="navbar-item" id="nav-home">Home</a>
+        <a href="../index.html" class="navbar-item" id="nav-home">Home</a>
         <a href="about.html" class="navbar-item" id="nav-about">About Us</a>
         <a href="products.html" class="navbar-item active" id="nav-products">Products</a>
         <a href="products.html?category=Festive Collection" class="navbar-item" id="nav-collections">Collections</a>
         <a href="wishlist.html" class="navbar-item" id="nav-wishlist">Favourites</a>
         <a href="cart.html" class="navbar-item" id="nav-bag">Shopping Bag</a>
       </div>
+
       <div class="navbar-icons">
         <a href="wishlist.html" class="nav-icon-link" aria-label="View Favourites" id="shortcut-wishlist">
           <i class="fa-regular fa-heart"></i>
@@ -49,11 +47,9 @@
     </div>
   </nav>
 
-  <!-- PRODUCTS PAGE CONTAINER -->
   <div class="page-container">
     <main class="section-wrapper">
 
-      <!-- PAGE HEADER -->
       <div class="section-header">
         <span class="section-subtitle">Aromatherapy Gallery</span>
         <h1 class="section-title">The Scented Chambers</h1>
@@ -64,13 +60,9 @@
         </div>
       </div>
 
-      <!-- PAGE WORKSPACE LAYOUT -->
       <div class="products-page-layout">
-
-        <!-- SIDEBAR FILTER SYSTEM -->
         <aside class="filters-sidebar">
 
-          <!-- Search Widget -->
           <div class="filter-widget">
             <h3 class="filter-title">Search Fragrance</h3>
             <div class="search-bar-container">
@@ -80,22 +72,16 @@
             </div>
           </div>
 
-          <!-- Category Selection Widget -->
           <div class="filter-widget">
             <h3 class="filter-title">Collections</h3>
             <div class="category-filters-list">
-              <button class="category-filter-btn active" data-category="All" id="filter-cat-all">All
-                Collections</button>
-              <button class="category-filter-btn" data-category="Maharani Collection" id="filter-cat-maharani">Maharani
-                Collection</button>
-              <button class="category-filter-btn" data-category="Shubharambh Collection"
-                id="filter-cat-shubharambh">Shubharambh Collection</button>
-              <button class="category-filter-btn" data-category="Festive Collection" id="filter-cat-festive">Festive
-                Collection</button>
+              <button class="category-filter-btn active" data-category="All" id="filter-cat-all">All Collections</button>
+              <button class="category-filter-btn" data-category="Maharani Collection" id="filter-cat-maharani">Maharani Collection</button>
+              <button class="category-filter-btn" data-category="Shubharambh Collection" id="filter-cat-shubharambh">Shubharambh Collection</button>
+              <button class="category-filter-btn" data-category="Festive Collection" id="filter-cat-festive">Festive Collection</button>
             </div>
           </div>
 
-          <!-- Sorting Widget -->
           <div class="filter-widget">
             <h3 class="filter-title">Sort By</h3>
             <select id="product-sort" class="sort-select" aria-label="Sort products">
@@ -107,30 +93,19 @@
 
         </aside>
 
-        <!-- MAIN PRODUCTS GRID & SUB-FILTER -->
         <section class="products-grid-column">
-
-          <!-- Subcategory Filter Pills Container -->
           <div class="subcategory-filters-container">
             <span class="subcategory-label">Sub-Category:</span>
-            <div class="subcategory-filters-list" id="subcategory-filters-wrapper">
-              <!-- Injected Dynamically based on category selection -->
-            </div>
+            <div class="subcategory-filters-list" id="subcategory-filters-wrapper"></div>
           </div>
 
-          <!-- Products Card Grid -->
-          <div class="products-layout-grid" id="products-grid-container">
-            <!-- Dynamic Cards Populated by app.js -->
-          </div>
-
+          <div class="products-layout-grid" id="products-grid-container"></div>
         </section>
-
       </div>
 
     </main>
   </div>
 
-  <!-- FOOTER -->
   <footer class="luxury-footer">
     <div class="footer-grid">
       <div>
@@ -140,15 +115,17 @@
           vintage royal aesthetics.
         </p>
       </div>
+
       <div>
         <h4 class="footer-col-title">Chamber Directory</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home Entrance</a></li>
+          <li><a href="../index.html">Home Entrance</a></li>
           <li><a href="about.html">About Our Rituals</a></li>
           <li><a href="products.html">Product Gallery</a></li>
           <li><a href="wishlist.html">Favourites List</a></li>
         </ul>
       </div>
+
       <div>
         <h4 class="footer-col-title">Fragrance Support</h4>
         <ul class="footer-links">
@@ -158,6 +135,7 @@
           <li><a href="#">Bespoke Bulk Gifting</a></li>
         </ul>
       </div>
+
       <div>
         <h4 class="footer-col-title">Contact Office</h4>
         <p class="footer-text" style="margin-bottom: 0.8rem;">
@@ -169,6 +147,7 @@
         </p>
       </div>
     </div>
+
     <div class="footer-bottom">
       <div>&copy; 2026 Anindé & Co. Crafted for the Royal Soul.</div>
       <div class="social-links">
@@ -179,7 +158,6 @@
     </div>
   </footer>
 
-  <!-- Application Controller -->
   <script src="../js/products.js"></script>
   <script src="../js/cart.js"></script>
   <script src="../js/wishlist.js"></script>
