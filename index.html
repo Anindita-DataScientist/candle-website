@@ -1,14 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="0; url=./frontend/index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Handcrafted Luxury Candles inspired by royal Indian heritage, Rococo aesthetics, and soulful beginnings. Experience the dark romantic sensory ambiance of premium gifting.">
+  <title>Handcrafted Luxury Candles | Ancient Heritage & Romantic Rituals</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="frontend/css/style.css">
 </head>
 <body>
-  <script>
-    window.location.href = "./frontend/index.html";
-  </script>
-  Redirecting...
+
+  <nav class="luxury-navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="navbar-logo" id="nav-logo">
+        Anindé <span>& Co.</span>
+      </a>
+
+      <div class="navbar-menu" id="navbar-menu">
+        <a href="index.html" class="navbar-item active" id="nav-home">Home</a>
+        <a href="frontend/html/about.html" class="navbar-item" id="nav-about">About Us</a>
+        <a href="frontend/html/products.html" class="navbar-item" id="nav-products">Products</a>
+        <a href="frontend/html/products.html?category=Festive Collection" class="navbar-item" id="nav-collections">Collections</a>
+        <a href="frontend/html/wishlist.html" class="navbar-item" id="nav-wishlist">Favourites</a>
+        <a href="frontend/html/cart.html" class="navbar-item" id="nav-bag">Shopping Bag</a>
+      </div>
+
+      <div class="navbar-icons">
+        <a href="frontend/html/wishlist.html" class="nav-icon-link" aria-label="View Favourites" id="shortcut-wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge-count wishlist-badge" style="display: none;">0</span>
+        </a>
+        <a href="frontend/html/cart.html" class="nav-icon-link" aria-label="View Shopping Bag" id="shortcut-cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge-count cart-badge" style="display: none;">0</span>
+        </a>
+
+        <button class="navbar-burger" aria-label="Toggle Navigation Menu" id="mobile-menu-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-container" style="padding-top: 0;">
+
+    <header class="hero-section" id="home-hero">
+      <div class="hero-image-panel">
+        <img src="frontend/assets/images/candle-hero.jpg" alt="Handcrafted Luxury Pillar Candle" class="hero-bg-media">
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title font-serif">Handcrafted Luxury Candles</h1>
+        <div class="ornament-divider">
+          <div class="ornament-line"></div>
+          <div class="ornament-diamond"></div>
+          <div class="ornament-line"></div>
+        </div>
+        <p class="hero-subheadline">
+          Inspired by royal Indian rituals, timeless beauty, and soulful beginnings.
+        </p>
+        <div class="hero-buttons">
+          <a href="frontend/html/products.html" class="btn btn-primary" id="hero-btn-shop">Shop Collection</a>
+          <a href="frontend/html/about.html" class="btn btn-secondary" id="hero-btn-story">Explore Story</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-wrapper" id="featured-collections">
+      <div class="section-header">
+        <span class="section-subtitle">Chamber Selections</span>
+        <h2 class="section-title">Featured Collections</h2>
+        <div class="ornament-divider">
+          <div class="ornament-line"></div>
+          <div class="ornament-diamond"></div>
+          <div class="ornament-line"></div>
+        </div>
+      </div>
+
+      <div class="collections-grid">
+        <div class="collection-card" id="card-maharani">
+          <div class="collection-card-bg" id="col-maharani"></div>
+          <div class="collection-card-content">
+            <h3 class="collection-card-title font-serif">Maharani Collection</h3>
+            <a href="frontend/html/products.html?category=Maharani Collection" class="collection-card-link">
+              View Royal Florals <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="collection-card" id="card-shubharambh">
+          <div class="collection-card-bg" id="col-shubharambh"></div>
+          <div class="collection-card-content">
+            <h3 class="collection-card-title font-serif">Shubharambh Collection</h3>
+            <a href="frontend/html/products.html?category=Shubharambh Collection" class="collection-card-link">
+              Auspicious Aromas <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="collection-card" id="card-festive">
+          <div class="collection-card-bg" id="col-festive"></div>
+          <div class="collection-card-content">
+            <h3 class="collection-card-title font-serif">Festive Gifting</h3>
+            <a href="frontend/html/products.html?category=Festive Collection" class="collection-card-link">
+              Celebrate Heritage <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="collection-card" id="card-boxes">
+          <div class="collection-card-bg" id="col-boxes"></div>
+          <div class="collection-card-content">
+            <h3 class="collection-card-title font-serif">Luxury Gift Boxes</h3>
+            <a href="frontend/html/products.html?subcategory=Gift Boxes" class="collection-card-link">
+              Curate Custom Sets <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrapper" id="featured-products">
+      <div class="section-header">
+        <span class="section-subtitle">Exquisite Artisanship</span>
+        <h2 class="section-title">Signature Releases</h2>
+        <div class="ornament-divider">
+          <div class="ornament-line"></div>
+          <div class="ornament-diamond"></div>
+          <div class="ornament-line"></div>
+        </div>
+      </div>
+
+      <div class="products-layout-grid" id="featured-products-container"></div>
+
+      <div class="text-center" style="margin-top: 4rem;">
+        <a href="frontend/html/products.html" class="btn btn-primary" id="btn-discover-all">Discover Full Gallery</a>
+      </div>
+    </section>
+
+    <section class="brand-story-section section-wrapper" id="brand-story">
+      <div class="story-grid">
+        <div class="story-content">
+          <div class="story-header">
+            <span class="section-subtitle" style="text-align: left; display: block;">The Essence of Warmth</span>
+            <h2 class="story-title font-serif">Handcrafted Indian Heritage</h2>
+          </div>
+          <p class="story-lead">
+            Every candle is a testament to the passage of time—hand-rolled, hand-polished, and poured under specific lunar alignments.
+          </p>
+          <p class="story-text">
+            Our brand is born at the intersection of Rococo's feminine softness and royal Indian heritage.
+          </p>
+          <a href="frontend/html/about.html" class="btn btn-secondary" style="margin-top: 1.5rem;" id="btn-read-history">Read Our History</a>
+        </div>
+
+        <div class="story-image-card">
+          <img src="frontend/assets/images/candle-hero.jpg" alt="Wax Pouring Ritual Image">
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="frontend/js/products.js"></script>
+  <script src="frontend/js/cart.js"></script>
+  <script src="frontend/js/wishlist.js"></script>
+  <script src="frontend/js/catalog.js"></script>
+  <script src="frontend/js/app.js"></script>
 </body>
 </html>
