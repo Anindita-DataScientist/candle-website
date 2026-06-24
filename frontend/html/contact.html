@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Reach our fragrance support team. Send queries regarding custom orders, bridal gifting registries, or shipping assistance.">
+  <title>Contact the Chambers | Customer Support</title>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheet Link -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- GLOBAL STICKY LUXURY NAVBAR -->
+  <nav class="luxury-navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="navbar-logo" id="nav-logo">
+        Anindé &amp; Co.
+      </a>
+      <div class="navbar-menu" id="navbar-menu">
+        <a href="index.html" class="navbar-item" id="nav-home">Home</a>
+        <a href="about.html" class="navbar-item" id="nav-about">About Us</a>
+        <a href="products.html" class="navbar-item" id="nav-products">Products</a>
+        <a href="products.html?category=Festive Collection" class="navbar-item" id="nav-collections">Collections</a>
+        <a href="wishlist.html" class="navbar-item" id="nav-wishlist">Favourites</a>
+        <a href="cart.html" class="navbar-item" id="nav-bag">Shopping Bag</a>
+      </div>
+      <div class="navbar-icons">
+        <a href="wishlist.html" class="nav-icon-link" aria-label="View Favourites" id="shortcut-wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge-count wishlist-badge" style="display: none;">0</span>
+        </a>
+        <a href="cart.html" class="nav-icon-link" aria-label="View Shopping Bag" id="shortcut-cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge-count cart-badge" style="display: none;">0</span>
+        </a>
+        <button class="navbar-burger" aria-label="Toggle Navigation Menu" id="mobile-menu-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTACT PAGE CONTAINER -->
+  <div class="page-container">
+    <main class="section-wrapper">
+
+      <!-- PAGE HEADER -->
+      <div class="section-header">
+        <span class="section-subtitle">Chamber Correspondence</span>
+        <h1 class="section-title">Reach Our Alchemists</h1>
+        <div class="ornament-divider">
+          <div class="ornament-line"></div>
+          <div class="ornament-diamond"></div>
+          <div class="ornament-line"></div>
+        </div>
+      </div>
+
+      <!-- WORKSPACE CONTACT GRID -->
+      <div class="contact-grid">
+
+        <!-- INFO BLOCK -->
+        <div class="contact-card-info glass-card">
+          <h2 class="contact-info-title font-serif">Customer Care Chambers</h2>
+          <p class="muted-text" style="line-height: 1.6; margin-bottom: 2rem;">
+            Whether you require consultation regarding bridal gifting registries, wish to curate custom corporate
+            orders, or need assistance tracing your fragrance courier.
+          </p>
+
+          <div class="contact-channels">
+            <!-- Channel 1: Location -->
+            <div class="contact-channel-item">
+              <i class="fa-solid fa-compass channel-icon"></i>
+              <div class="channel-details">
+                <h4>Jaipur Quarters</h4>
+                <p>Suite 204, Gilded Court Palace, C-Scheme, Jaipur, Rajasthan - 302001</p>
+              </div>
+            </div>
+
+            <!-- Channel 2: Email -->
+            <div class="contact-channel-item">
+              <i class="fa-solid fa-feather-pointed channel-icon"></i>
+              <div class="channel-details">
+                <h4>Electronic Ink</h4>
+                <p>
+                  concierge@lambiancechamber.com<br>
+                  support@lambiancechamber.com
+                </p>
+              </div>
+            </div>
+
+            <!-- Channel 3: Phone -->
+            <div class="contact-channel-item">
+              <i class="fa-solid fa-phone-volume channel-icon"></i>
+              <div class="channel-details">
+                <h4>Voice Line</h4>
+                <p>
+                  +91 141 8976 5432<br>
+                  +91 11 4455 8899
+                </p>
+              </div>
+            </div>
+
+            <!-- Channel 4: Hours -->
+            <div class="contact-channel-item">
+              <i class="fa-regular fa-calendar-days channel-icon"></i>
+              <div class="channel-details">
+                <h4>Burn Times & Hours</h4>
+                <p>Monday - Saturday: 10:00 AM - 6:00 PM IST<br>Sunday: Resting (Quiet Meditation)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM BLOCK -->
+        <div class="contact-form-widget glass-card">
+          <h2 class="form-title font-serif">Send a Parchment</h2>
+
+          <form id="contact-parchment-form"
+            onsubmit="event.preventDefault(); alert('Your message has been sealed and sent to the alchemists.'); this.reset();">
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="contact-name">Noble Title / Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Maharani Gayatri" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Return Address</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="e.g. name@domain.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Query Sphere</label>
+              <select id="contact-subject" class="form-control"
+                style="background: rgba(30,15,12,0.8); color: var(--soft-cream);" aria-label="Select subject">
+                <option value="general">General Fragrance Inquiry</option>
+                <option value="gifting">Bespoke Gifting & Weddings</option>
+                <option value="shipping">Courier & Chamber Delivery</option>
+                <option value="collaborations">Aesthetic Collaborations</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <textarea id="contact-message" class="form-control" rows="6"
+                placeholder="Write your thoughts with elegance and grace..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top: 1rem;" id="btn-submit-contact">
+              Seal & Send Message
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="luxury-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Anindé & Co.</div>
+        <p class="footer-text">
+          Pioneers in dark romantic aromatics. Handcrafted with soy wax, natural oils, and brass vessels inspired by
+          vintage royal aesthetics.
+        </p>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Chamber Directory</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home Entrance</a></li>
+          <li><a href="about.html">About Our Rituals</a></li>
+          <li><a href="products.html">Product Gallery</a></li>
+          <li><a href="wishlist.html">Favourites List</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Fragrance Support</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Chambers</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Candle Burn Care</a></li>
+          <li><a href="#">Bespoke Bulk Gifting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Contact Office</h4>
+        <p class="footer-text" style="margin-bottom: 0.8rem;">
+          Royal Heritage Quarters, Jaipur, Rajasthan, India
+        </p>
+        <p class="footer-text">
+          contact@lambiancechamber.com<br>
+          +91 141 8976 5432
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Anindé & Co. Crafted for the Royal Soul.</div>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Controller -->
+  <script src="../js/products.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/wishlist.js"></script>
+  <script src="../js/catalog.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>
